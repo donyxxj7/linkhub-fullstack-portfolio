@@ -1,0 +1,161 @@
+/* Importando as mesmas variáveis de cor dos seus outros projetos para manter a consistência */
+:root {
+    --primary-color: #e50914; /* Vermelho estilo Netflix */
+    --dark-color: #141414;
+    --light-dark-color: #1c1c1c;
+    --text-color: #ffffff;
+    --text-gray: #999;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--dark-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: var(--light-dark-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+h1, h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+/* Estilo do Formulário */
+#add-link-form {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap; /* Permite que o formulário quebre em telas menores */
+}
+
+#add-link-form input {
+    flex-grow: 1; /* Faz os inputs ocuparem o espaço disponível */
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #222;
+    color: var(--text-color);
+}
+
+#add-link-form input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+#add-link-form button {
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#add-link-form button:hover {
+    background-color: #f6121d;
+}
+
+/* Estilo da Lista de Links */
+#links-list {
+    list-style: none;
+    padding: 0;
+}
+
+#links-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    word-break: break-all; /* Impede que URLs longas quebrem o layout */
+}
+
+#links-list li a {
+    color: #a0cff1;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+#links-list li button {
+    background-color: #8B0000; /* Vermelho escuro para o botão de deletar */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#links-list li button:hover {
+    background-color: #B22222; /* Vermelho mais claro no hover */
+}
+.feedback {
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    height: 18px; /* Altura fixa para não "empurrar" o layout */
+    transition: all 0.5s;
+}
+.feedback.success {
+    background-color: #28a745;
+    color: white;
+}
+.feedback.error {
+    background-color: #dc3545;
+    color: white;
+}
+/* Adicione ao final de public/admin.css */
+
+.link-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.edit-btn, .save-btn {
+    background-color: #007bff; /* Azul */
+}
+.edit-btn:hover, .save-btn:hover {
+    background-color: #0056b3;
+}
+
+.cancel-btn {
+    background-color: #6c757d; /* Cinza */
+}
+.cancel-btn:hover {
+    background-color: #5a6268;
+}
+
+.edit-form {
+    display: flex;
+    flex-grow: 1;
+    gap: 10px;
+}
+
+.edit-form input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+}

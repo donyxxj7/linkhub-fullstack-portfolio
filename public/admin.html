@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Administração | LinkHub</title>
+    
+    <link rel="stylesheet" href="admin.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <header class="admin-header">
+            <h1><i class="fas fa-cogs"></i> Painel de Administração</h1>
+            <a href="index.html" class="logout-link">Ver Página Pública <i class="fas fa-external-link-alt"></i></a>
+        </header>
+
+        <section class="form-section">
+            <h2><i class="fas fa-plus-circle"></i> Adicionar Novo Link</h2>
+            <form id="add-link-form">
+                <input type="text" id="title" placeholder="Título do Link" required>
+                <input type="url" id="url" placeholder="URL do Link (ex: https://google.com)" required>
+                <button type="submit">
+                    <i class="fas fa-plus"></i> Adicionar Link
+                </button>
+            </form>
+            <div id="feedback-message" class="feedback"></div>
+        </section>
+
+        <section class="links-section">
+            <h2><i class="fas fa-link"></i> Links Atuais</h2>
+            <ul id="links-list">
+                </ul>
+        </section>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
