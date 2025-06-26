@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <img src="https://imgur.com/uPDIP8F" alt="Demonstração do LinkHub" width="80%">
+   <a href="https://imgur.com/a/MHtdT3F">Foto Do LinkHub</a>
 </p>
 
 ---
